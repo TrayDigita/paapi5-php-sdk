@@ -1,0 +1,41 @@
+{
+    "name": "traydigita/paapi5-php-sdk",
+    "version": "1.1.0",
+    "description": "(Official -> amzn/paapi5-php-sdk) ProductAdvertisingAPI 5.0 PHP SDK",
+    "keywords": [
+        "amazon",
+        "pa-api",
+        "paapi",
+        "paapi5.0",
+        "paapi5",
+        "paapi5-php-sdk",
+        "getitems",
+        "searchitems",
+        "getvariations",
+        "getbrowsenodes",
+        "ProductAdvertisingAPI"
+    ],
+    "homepage": "https://webservices.amazon.com/paapi5/documentation/index.html",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name" : "Product Advertising API Team",
+            "homepage": "https://webservices.amazon.com/paapi5/documentation/index.html"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2||^7"
+    },
+    "require-dev": {},
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": { "Amazon\\ProductAdvertisingAPI\\v1\\" : "src/" },
+        "psr-0": { "Amazon\\ProductAdvertisingAPI\\v1\\" : "src/" }
+    }
+}
