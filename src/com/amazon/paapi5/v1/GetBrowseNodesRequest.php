@@ -339,7 +339,8 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets partnerType
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\PartnerType $partnerType partnerType
+     * @param string partnerType
+     * @see \Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\PartnerType
      *
      * @return $this
      */
@@ -353,7 +354,8 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\GetBrowseNodesResource[]
+     * @return array<string>
+     * @see \Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\GetBrowseNodesResource::getAllowableEnumValues()
      */
     public function getResources()
     {
@@ -363,7 +365,8 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resources
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\GetBrowseNodesResource[] $resources resources
+     * @param array $resources
+     * @see \Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\GetBrowseNodesResource::getAllowableEnumValues()
      *
      * @return $this
      */
@@ -443,5 +446,3 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-
